@@ -1,0 +1,9 @@
+.formulario{
+    display: flex;
+    
+    
+}
+.form{
+    background-color: aqua;
+    flex-direction: column;
+}
