@@ -11,54 +11,37 @@
 
 <body>
     <main>
-        <section>
+        <section class="titulos">
             <h1>Ingreso Pacientes</h1>
             <h2 id="bienvenido"></h2>
         </section>
 
+
         <section class="formulairo">
-            <div class="form">
-
-                <form action="" id="foreset">
-                    <p>
-                        <label for="cedula">Cedula</label>
-                        <input type="text" id="cedula">
-                    </p>
-                    <p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
-                    </p>
-                    <p>
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" id="apellido">
-
-                    </p>
-                    <p>
-                        <label for="edad">Edad</label>
-                        <input type="text" id="edad">
-                    </p>
-                    <p>
-                        <label for="celular">Celular</label>
-                        <input type="text" id="celular">
-                    </p>
-                    <p>
-                        <label for="Correo">Correo Electronico</label>
-                        <input type="text" id="Correo">
-                    </p>
-                    <p>
-                        <label for="valorcita">Valor de Cita</label>
-                        <input type="text" id="valorcita">
-                    </p>
-                    <p>
-                        <label for="historia">Historia Clinica</label>
-                        <textarea name="historia" id="historia" cols="30" rows="10"></textarea>
-                    </p>
-                    <p>
-                        <input id="guardar" type="button" value="Guardar" onclick="pacientes();">
-                    </p>
-                </form>
+            <div class="contenedor">
+                <div class="form">
+                    <form action="" id="foreset">
+                        <input class="ingresarinfo" type="text" name="cedula" id="cedula"
+                            placeholder="Ingrese documento">
+                        <input class="ingresarinfo" type="text" name="nombre" id="nombre"
+                            placeholder="Ingrese sus nombres">
+                        <input class="ingresarinfo" type="text" name="apellido" id="apellido"
+                            placeholder="Ingrese sus apellidos">
+                        <input class="ingresarinfo" type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+                        <input class="ingresarinfo" type="text" name="celular" id="celular"
+                            placeholder="Ingrese Su número celular">
+                        <input class="ingresarinfo" type="text" name="correo" id="correo"
+                            placeholder="Ingrese su correo electronico">
+                        <input class="ingresarinfo" type="text" name="valorcita" id="valorcita"
+                            placeholder="Ingrese valor de la cita">
+                        <textarea class="ingresarinfo" name="historia" id="historia" cols="28" rows="4"
+                            placeholder="Ingrese historia del paciente"></textarea>
+                        <input class="boton" id="guardar" type="button" value="Guardar" onclick="pacientes();">
+                    </form>
+                </div>
             </div>
-
+        </section>
+        <section>
             <div>
                 <h2 id="respuesta"></h2>
             </div>
