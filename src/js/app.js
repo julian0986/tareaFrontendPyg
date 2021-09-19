@@ -12,15 +12,15 @@ function pacientes(){
         let valor =parseFloat( document.getElementById('valorcita').value,);
         let iva =(valor*0.19)+valor;
         paciente = {
-        Cedula : document.getElementById('cedula').value,
-        Nombre : document.getElementById('nombre').value,
-        Apellido : document.getElementById('apellido').value,
-        Edad : document.getElementById('edad').value,
-        Celular : document.getElementById('celular').value,
-        Correo: document.getElementById('correo').value,
-        Calorcita : valor,
-        Historia : document.getElementById('historia').value,
-        Citaiva :  iva,
+        cedula : document.getElementById('cedula').value,
+        nombre : document.getElementById('nombre').value,
+        apellido : document.getElementById('apellido').value,
+        edad : document.getElementById('edad').value,
+        celular : document.getElementById('celular').value,
+        correo: document.getElementById('correo').value,
+        valorcita : valor,
+        historia : document.getElementById('historia').value,
+        citaiva :  iva,
 
     };
     document.getElementById('respuesta').innerHTML = `Registraste a: ${paciente.nombre} ${paciente.apellido}`;
